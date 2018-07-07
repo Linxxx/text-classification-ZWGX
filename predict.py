@@ -54,6 +54,7 @@ if __name__ == '__main__':
     sock.bind(('127.0.0.1', 50009))
     sock.listen(5)
     cnn_model = CnnModel()
+    print("模型已运行……\n")
     while True:
         try:
             conn,addr = sock.accept()
